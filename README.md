@@ -10,7 +10,7 @@ Simply browse the available games, select what you want, set your player name an
 
 1. **Launch** `LAN Game Installer.exe`. If Windows asks for administrator permission, click **Yes**.
 2. The main window shows all available games you have configued in your `config\games.yaml`
-3. *(Optional)* Copy the examples\config folder from this repository to see an example configuration
+3. *(Optional)* Copy the folder `examples\config` folder from the source code of this release to your machine to see a sample configuration.
 
 ## How OneDrive sync works
 
