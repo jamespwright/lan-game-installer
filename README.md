@@ -17,7 +17,7 @@ Simply browse the available games, select what you want, set your player name an
 LAN Game Installer can automatically download game installers and configuration files from a shared OneDrive folder. This is useful as games can be downloaded and installed at home rather than during an event.
 
 - If a OneDrive **Download URL** is set in the settings, the app will sync the game list and installers from that online folder.
-- All YAML files in the `config` folder (such as `games.yaml`, `filter.yaml`, and `usersettings.yaml`) will automatically sync from OneDrive
+- All YAML files in the `config` folder (such as `games.yaml`, `filter.yaml`, and `usersettings.yaml` will automatically sync from OneDrive
 - Only the files needed for the games you select will be downloaded to your computer.
 - The app checks file integrity to avoid re-downloading files you already have.
 - You can disable OneDrive syncing or downloads in the settings if you want to use only local files.
