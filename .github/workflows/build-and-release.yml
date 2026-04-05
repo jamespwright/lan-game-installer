@@ -1,0 +1,76 @@
+name: Build and Release LAN Game Installer
+
+permissions:
+  contents: write
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Version number for the release'
+        required: true
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.x'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r app/requirements.txt
+
+    - name: Build executable
+      shell: cmd
+      run: |
+        pyinstaller ^
+            --onefile ^
+            --noconsole ^
+            --uac-admin ^
+            --name "LAN Game Installer" ^
+            --add-data "app/core;core" ^
+            --add-data "app/ui;ui" ^
+            --collect-submodules app.core ^
+            --collect-submodules app.ui ^
+            --collect-all numpy ^
+            app/lan_game_installer.py
+
+    - name: Verify build output
+      run: dir dist
+
+    - name: Upload build artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: LANInatall-build
+        path: dist/
+
+  release:
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Download build artifact
+      uses: actions/download-artifact@v4
+      with:
+        name: LANInatall-build
+        path: build-output/
+
+    - name: Zip build artifact
+      run: cd build-output && zip -r ../LAN-Game-Installer-${{ github.event.inputs.version }}.zip .
+
+    - name: Create GitHub Release
+      uses: softprops/action-gh-release@v2
+      with:
+        tag_name: v${{ github.event.inputs.version }}
+        name: LAN Game Installer v${{ github.event.inputs.version }}
+        files: LAN-Game-Installer-${{ github.event.inputs.version }}.zip
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

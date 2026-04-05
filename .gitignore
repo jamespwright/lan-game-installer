@@ -1,0 +1,9 @@
+app/Installers
+app/config
+.venv
+*/__pycache__/
+build
+dist
+*.spec
+plans
+__pycache__

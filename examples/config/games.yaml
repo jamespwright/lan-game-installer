@@ -1,0 +1,382 @@
+games:
+- name: Age of Empires II
+  type: game
+  installer_type: msi
+  base_path: Installers/Age of Empires II/game
+  install_msi: Age of Empires II.msi
+  parameters: 'INSTALLDIR="{target_dir}" PLAYERNAME="{player}"'
+  prerequisites: []
+  description: "Age of Empires II is a real-time strategy game developed by Ensemble Studios and published by Microsoft. It was released in 1999 and is set in the Middle Ages, allowing players to build and manage their own civilizations, gather resources, and engage in battles against other players or AI opponents."
+  release_date: 1999-09-30
+  genre: Real-time strategy
+  developer: Ensemble Studios
+  publisher: Microsoft
+  player_count: 1-8
+- name: Age of Empires II Definitive Edition
+  type: game
+  installer_type: exe_setup
+  base_path: Installers/Age of Empires II Definitive Edition/game
+  install_exe: Age of Empires II Definitive Edition.exe
+  parameters: '/SILENT /SUPPRESSMSGBOXES /NORESTART /DIR="{target_dir}" /PLAYERNAME="{player}"'
+  prerequisites: []
+  description: "Age of Empires II Definitive Edition is a remastered version of the classic real-time strategy game developed by Forgotten Empires and published by Xbox Game Studios. It features enhanced graphics, improved gameplay mechanics, and additional content, allowing players to build and manage their civilizations, gather resources, and engage in battles against other players or AI opponents."
+  release_date: 2019-11-14
+  genre: Real-time strategy
+  developer: Forgotten Empires
+  publisher: Xbox Game Studios
+  player_count: 1-8
+- name: Battlefield 1942
+  type: game
+  installer_type: msi
+  base_path: Installers/Battlefield 1942/game
+  install_msi: Battlefield 1942.msi
+  parameters: 'INSTALLDIR="{target_dir}" PLAYERNAME="{player}"'
+  prerequisites: []
+  description: "Battlefield 1942 is a first-person shooter set during World War II, developed by DICE and published by Electronic Arts. Players battle across iconic WWII theatres including North Africa, the Pacific, and Western Europe with infantry, vehicles, aircraft, and naval combat."
+  release_date: 2002-09-22
+  genre: First-person shooter
+  developer: Digital Illusions CE (DICE)
+  publisher: Electronic Arts
+  player_count: 1-64
+- name: Battlefield 3
+  type: game
+  installer_type: exe_setup
+  base_path: Installers/Battlefield 3/Game
+  install_exe: Battlefield 3.exe
+  parameters: '/SILENT /SUPPRESSMSGBOXES /NORESTART /DIR="{target_dir}" /PLAYERNAME="{player}"'
+  prerequisites: []
+  description: "Battlefield 3 is a first-person shooter developed by DICE and published by Electronic Arts. It features large-scale multiplayer combat across diverse urban and open environments, with jets, tanks, and squad-based gameplay powered by the Frostbite 2 engine."
+  release_date: 2011-10-25
+  genre: First-person shooter
+  developer: Digital Illusions CE (DICE)
+  publisher: Electronic Arts
+  player_count: 1-64
+- name: Battlefield 4
+  type: game
+  installer_type: exe_setup
+  base_path: Installers/Battlefield 4/Game
+  install_exe: Battlefield 4.exe
+  parameters: '/SILENT /SUPPRESSMSGBOXES /NORESTART /DIR="{target_dir}" /PLAYERNAME="{player}"'
+  prerequisites: []
+  description: "Battlefield 4 is a first-person shooter developed by DICE and published by Electronic Arts. It introduces the Levolution system, which lets players dynamically alter the battlefield environment, and features large-scale combined-arms multiplayer across land, sea, and air."
+  release_date: 2013-10-29
+  genre: First-person shooter
+  developer: Digital Illusions CE (DICE)
+  publisher: Electronic Arts
+  player_count: 1-64
+- name: Battlefield Bad Company 2
+  type: game
+  installer_type: exe_setup
+  base_path: Installers/Battlefield Bad Company 2/Game
+  install_exe: Battlefield Bad Company 2.exe
+  parameters: '/SILENT /SUPPRESSMSGBOXES /NORESTART /DIR="{target_dir}" /PLAYERNAME="{player}" /SERVERADDRESS="{server_address}"'
+  input_box:
+  - value: "server_address"
+    title: "Server IP Address"
+    description: "Enter the IP address of the Battlefield Bad Company 2 server (e.g. 192.168.1.1)"
+  prerequisites: []
+  description: "Battlefield Bad Company 2 is a first-person shooter developed by DICE and published by Electronic Arts. Built on the destructible Frostbite engine, players can demolish cover and buildings during intense squad-based multiplayer battles."
+  release_date: 2010-03-02
+  genre: First-person shooter
+  developer: Digital Illusions CE (DICE)
+  publisher: Electronic Arts
+  player_count: 1-32
+- name: Battlefield Bad Company 2 Server
+  type: server
+  installer_type: msi
+  base_path: Installers/Battlefield Bad Company 2/Server
+  install_msi: Battlefield Bad Company 2 Server.msi
+  parameters: 'INSTALLDIR="{target_dir}"'
+  prerequisites: []
+  description: "Dedicated server software for Battlefield Bad Company 2, allowing players to host their own multiplayer matches on a local or remote machine."
+  release_date: 2010-03-02
+  genre: Dedicated Server
+  developer: Digital Illusions CE (DICE)
+  publisher: Electronic Arts
+  player_count: 1-32
+- name: BF-Portable
+  type: server
+  installer_type: exe_setup
+  base_path: Installers/BF-Portable/server
+  install_exe: BF-Portable.exe
+  parameters: '/SILENT /SUPPRESSMSGBOXES /NORESTART /DIR="{target_dir}"'
+  prerequisites: []
+  description: "BF-Portable is a portable Battlefield server utility that allows easy setup and hosting of Battlefield multiplayer sessions without a full server installation."
+  release_date: --
+  genre: Dedicated Server
+  developer: --
+  publisher: --
+  player_count: --
+- name: Call Of Duty
+  type: game
+  installer_type: msi
+  base_path: Installers/Call Of Duty/Game
+  install_msi: Call Of Duty.msi
+  parameters: 'INSTALLDIR="{target_dir}" PLAYERNAME="{player}"'
+  prerequisites: []
+  description: "Call of Duty is a first-person shooter set during World War II, developed by Infinity Ward and published by Activision. Players experience intense combat across American, British, and Soviet campaigns, with multiplayer supporting large-scale online battles."
+  release_date: 2003-10-27
+  genre: First-person shooter
+  developer: Infinity Ward
+  publisher: Activision
+  player_count: 1-32
+- name: Call Of Duty 4
+  type: game
+  installer_type: msi
+  base_path: Installers/Call Of Duty 4/Game
+  install_msi: Call Of Duty 4.msi
+  parameters: 'INSTALLDIR="{target_dir}" PLAYERNAME="{player}"'
+  prerequisites: []
+  description: "Call of Duty 4: Modern Warfare is a first-person shooter developed by Infinity Ward and published by Activision. It shifted the series from World War II to modern combat, featuring a gripping single-player campaign and a groundbreaking multiplayer progression system."
+  release_date: 2007-11-05
+  genre: First-person shooter
+  developer: Infinity Ward
+  publisher: Activision
+  player_count: 1-18
+- name: Chivalry Medieval Warfare
+  type: game
+  installer_type: msi
+  base_path: Installers/Chivalry Medieval Warfare/Game
+  install_msi: Chivalry Medieval Warfare.msi
+  parameters: 'INSTALLDIR="{target_dir}" PLAYERNAME="{player}"'
+  prerequisites: []
+  description: "Chivalry: Medieval Warfare is a first-person melee action game developed and published by Torn Banner Studios. Players engage in brutal sword-and-shield combat across large multiplayer battles, with a deep slash-stab-overhead combat system and multiple objective-based game modes."
+  release_date: 2012-10-16
+  genre: Action, First-person melee
+  developer: Torn Banner Studios
+  publisher: Torn Banner Studios
+  player_count: 1-32
+- name: Chivalry Medieval Warfare Server
+  type: server
+  installer_type: msi
+  base_path: Installers/Chivalry Medieval Warfare/Server
+  install_msi: Chivalry Medieval Warfare Server.msi
+  parameters: 'INSTALLDIR="{target_dir}"'
+  prerequisites: []
+  description: "Dedicated server software for Chivalry: Medieval Warfare, allowing players to host their own multiplayer sessions."
+  release_date: 2012-10-16
+  genre: Dedicated Server
+  developer: Torn Banner Studios
+  publisher: Torn Banner Studios
+  player_count: 1-32
+- name: Counter Strike 2
+  type: game
+  installer_type: exe_setup
+  base_path: Installers/Counter Strike 2/game
+  install_exe: Counter Strike 2.exe
+  parameters: '/SILENT /SUPPRESSMSGBOXES /NORESTART /DIR="{target_dir}" /PLAYERNAME="{player}"'
+  prerequisites: []
+  description: "Counter-Strike 2 is a tactical first-person shooter developed and published by Valve, serving as the full successor to CS:GO. It introduces Source 2 visuals, volumetric smoke grenades that interact with gunfire and explosions, and refined tick-rate-independent gameplay."
+  release_date: 2023-09-27
+  genre: Tactical first-person shooter
+  developer: Valve
+  publisher: Valve
+  player_count: 2-10
+- name: Counter-Strike Global Offensive
+  type: game
+  installer_type: msi
+  base_path: Installers/Counter-Strike Global Offensive/Game
+  install_msi: Counter-Strike Global Offensive.msi
+  parameters: 'INSTALLDIR="{target_dir}" PLAYERNAME="{player}"'
+  prerequisites: []
+  description: "Counter-Strike: Global Offensive is a tactical first-person shooter developed by Valve and Hidden Path Entertainment. It expands upon classic Counter-Strike gameplay with new maps, characters, weapons, and game modes including Arms Race and Demolition."
+  release_date: 2012-08-21
+  genre: Tactical first-person shooter
+  developer: Valve, Hidden Path Entertainment
+  publisher: Valve
+  player_count: 2-10
+- name: Duck Game
+  type: game
+  installer_type: msi
+  base_path: Installers/Duck Game/game
+  install_msi: Duck Game.msi
+  parameters: 'INSTALLDIR="{target_dir}" PLAYERNAME="{player}"'
+  prerequisites: []
+  description: "Duck Game is a fast-paced multiplayer action game developed by Landon Podbielski and published by Adult Swim Games. Players battle as ducks armed with an absurd variety of weapons across pixel-art arenas in frantic local and online multiplayer."
+  release_date: 2015-06-05
+  genre: Action, Party
+  developer: Landon Podbielski
+  publisher: Adult Swim Games
+  player_count: 1-4
+- name: Flatout 2
+  type: game
+  installer_type: msi
+  base_path: Installers/Flatout 2/Game
+  install_msi: Flatout 2.msi
+  parameters: 'INSTALLDIR="{target_dir}" PLAYERNAME="{player}"'
+  prerequisites: []
+  description: "FlatOut 2 is a racing game developed by Bugbear Entertainment and published by Vivendi Universal Games. It features highly destructible cars, ragdoll physics, demolition derby events, and a variety of race modes across chaotic multiplayer."
+  release_date: 2006-06-23
+  genre: Racing
+  developer: Bugbear Entertainment
+  publisher: Vivendi Universal Games
+  player_count: 1-8
+- name: Garrys Mod
+  type: game
+  installer_type: msi
+  base_path: Installers/Garrys Mod/Game
+  install_msi: Garrys Mod.msi
+  parameters: 'INSTALLDIR="{target_dir}" PLAYERNAME="{player}"'
+  prerequisites: []
+  description: "Garry's Mod is a physics sandbox game developed by Facepunch Studios and published by Valve. Players can freely manipulate objects and build contraptions using the Source engine's physics system, with access to a vast library of community-created content and game modes."
+  release_date: 2006-11-29
+  genre: Sandbox
+  developer: Facepunch Studios
+  publisher: Valve
+  player_count: 1-128
+- name: Halo - The Master Chief Collection
+  type: game
+  installer_type: exe_setup
+  base_path: Installers/Halo - The Master Chief Collection/game
+  install_exe: Halo - The Master Chief Collection.exe
+  parameters: '/SILENT /SUPPRESSMSGBOXES /NORESTART /DIR="{target_dir}" /PLAYERNAME="{player}"'
+  prerequisites: []
+  description: "Halo - The Master Chief Collection is a compilation of first-person shooter games developed by 343 Industries and published by Xbox Game Studios. It includes remastered versions of the original Halo games, offering enhanced graphics, improved gameplay mechanics, and a unified multiplayer experience."
+  release_date: 2014-11-11
+  genre: First-person shooter
+  developer: 343 Industries
+  publisher: Xbox Game Studios
+  player_count: 1-16
+- name: Grand Theft Auto IV
+  type: game
+  installer_type: msi
+  base_path: Installers/Grand Theft Auto IV/game
+  install_msi: Grand Theft Auto IV.msi
+  parameters: 'INSTALLDIR="{target_dir}" PLAYERNAME="{player}"'
+  prerequisites: []
+  description: "Grand Theft Auto IV is an action-adventure game developed by Rockstar North and published by Rockstar Games. Set in the fictional Liberty City, players follow immigrant Niko Bellic as he navigates crime and corruption in a richly detailed open world."
+  release_date: 2008-04-29
+  genre: Action-adventure
+  developer: Rockstar North
+  publisher: Rockstar Games
+  player_count: 1-32
+- name: Killing Floor
+  type: game
+  installer_type: msi
+  base_path: Installers/Killing Floor/Game
+  install_msi: Killing Floor.msi
+  parameters: 'INSTALLDIR="{target_dir}" PLAYERNAME="{player}"'
+  prerequisites: []
+  description: "Killing Floor is a co-operative survival horror first-person shooter developed and published by Tripwire Interactive. Players team up to fight through escalating waves of grotesque mutant specimens, culminating in a boss encounter, across a range of maps and difficulty settings."
+  release_date: 2009-05-14
+  genre: First-person shooter, Survival horror
+  developer: Tripwire Interactive
+  publisher: Tripwire Interactive
+  player_count: 1-6
+- name: Left 4 Dead 2
+  type: game
+  installer_type: msi
+  base_path: Installers/Left 4 Dead 2/Game
+  install_msi: Left 4 Dead 2.msi
+  parameters: 'INSTALLDIR="{target_dir}" PLAYERNAME="{player}"'
+  prerequisites: []
+  description: "Left 4 Dead 2 is a co-operative first-person shooter developed and published by Valve. Four survivors must fight through hordes of infected across multiple campaigns set in the Southern United States, with special infected enemies and an AI Director that dynamically adjusts the challenge."
+  release_date: 2009-11-17
+  genre: First-person shooter, Survival horror
+  developer: Valve
+  publisher: Valve
+  player_count: 1-8
+- name: Need for Speed SHIFT
+  type: game
+  installer_type: msi
+  base_path: Installers/Need for Speed SHIFT/Game
+  install_msi: Need for Speed SHIFT.msi
+  parameters: 'INSTALLDIR="{target_dir}" PLAYERNAME="{player}"'
+  prerequisites: []
+  description: "Need for Speed: SHIFT is a racing simulation game developed by Slightly Mad Studios and published by Electronic Arts. It offers a driver-focused experience with an immersive cockpit view, authentic car handling, and a career mode featuring licensed real-world cars and tracks."
+  release_date: 2009-09-17
+  genre: Racing simulation
+  developer: Slightly Mad Studios
+  publisher: Electronic Arts
+  player_count: 1-8
+- name: Red Alert 3
+  type: game
+  installer_type: msi
+  base_path: Installers/Red Alert 3/Game
+  install_msi: Red Alert 3.msi
+  parameters: 'INSTALLDIR="{target_dir}" PLAYERNAME="{player}"'
+  prerequisites: []
+  description: "Command & Conquer: Red Alert 3 is a real-time strategy game developed by EA Los Angeles and published by Electronic Arts. Set in an alternate Cold War timeline, players command the Allies, Soviets, or Empire of the Rising Sun across campaigns that support full co-operative play."
+  release_date: 2008-10-28
+  genre: Real-time strategy
+  developer: EA Los Angeles
+  publisher: Electronic Arts
+  player_count: 1-3
+- name: StarCraft II
+  type: game
+  installer_type: msi
+  base_path: Installers/StarCraft II/game
+  install_msi: StarCraft II.msi
+  parameters: 'INSTALLDIR="{target_dir}" PLAYERNAME="{player}"'
+  prerequisites: []
+  description: "StarCraft II: Wings of Liberty is a real-time strategy game developed and published by Blizzard Entertainment. Players command one of three distinct races — Terran, Zerg, or Protoss — in deep competitive multiplayer or an expansive single-player campaign with RPG-style mission choices."
+  release_date: 2010-07-27
+  genre: Real-time strategy
+  developer: Blizzard Entertainment
+  publisher: Blizzard Entertainment
+  player_count: 1-8
+- name: Team Fortress 2
+  type: game
+  installer_type: msi
+  base_path: Installers/Team Fortress 2/Game
+  install_msi: Team Fortress 2.msi
+  parameters: 'INSTALLDIR="{target_dir}" PLAYERNAME="{player}"'
+  prerequisites: []
+  description: "Team Fortress 2 is a team-based multiplayer first-person shooter developed and published by Valve. Players choose from nine distinct classes across a variety of game modes, featuring a distinctive cartoon art style, deep class-based strategy, and extensive cosmetic customisation."
+  release_date: 2007-10-10
+  genre: First-person shooter
+  developer: Valve
+  publisher: Valve
+  player_count: 2-32
+- name: Tom Clancys Rainbow Six Siege
+  type: game
+  installer_type: msi
+  base_path: Installers/Tom Clancys Rainbow Six Siege/game
+  install_msi: Tom Clancys Rainbow Six Siege.msi
+  parameters: 'INSTALLDIR="{target_dir}" PLAYERNAME="{player}"'
+  prerequisites: []
+  description: "Tom Clancy's Rainbow Six Siege is a tactical first-person shooter developed by Ubisoft Montreal and published by Ubisoft. It focuses on intense close-quarters combat with destructible environments, a growing roster of operators each with unique gadgets, and methodical 5v5 multiplayer."
+  release_date: 2015-12-01
+  genre: Tactical shooter
+  developer: Ubisoft Montreal
+  publisher: Ubisoft
+  player_count: 1-10
+- name: Unreal Tournament 3
+  type: game
+  installer_type: msi
+  base_path: Installers/Unreal Tournament 3/Game
+  install_msi: Unreal Tournament 3.msi
+  parameters: 'INSTALLDIR="{target_dir}" PLAYERNAME="{player}"'
+  prerequisites: []
+  description: "Unreal Tournament 3 is a first-person arena shooter developed by Epic Games and published by Midway Games. It features blazing-fast combat with a range of modes including Deathmatch, Capture the Flag, and the large-scale vehicle-based Warfare mode, all powered by Unreal Engine 3."
+  release_date: 2007-11-19
+  genre: First-person shooter
+  developer: Epic Games
+  publisher: Midway Games
+  player_count: 1-32
+- name: Warcraft III
+  type: game
+  installer_type: msi
+  base_path: Installers/Warcraft III/Game
+  install_msi: Warcraft III.msi
+  parameters: 'INSTALLDIR="{target_dir}" PLAYERNAME="{player}"'
+  prerequisites: []
+  description: "Warcraft III: Reign of Chaos is a real-time strategy game developed and published by Blizzard Entertainment. Players command one of four races — Human, Orc, Night Elf, or Undead — across an epic story campaign, with hero units that level up and gain abilities throughout battle."
+  release_date: 2002-07-03
+  genre: Real-time strategy
+  developer: Blizzard Entertainment
+  publisher: Blizzard Entertainment
+  player_count: 1-8
+- name: Wreckfest
+  type: game
+  installer_type: exe_setup
+  base_path: Installers/Wreckfest/game
+  install_exe: Wreckfest.exe
+  parameters: '/SILENT /SUPPRESSMSGBOXES /NORESTART /DIR="{target_dir}" /PLAYERNAME="{player}"'
+  prerequisites: []
+  description: "Wreckfest is a racing game developed by Bugbear Entertainment and published by THQ Nordic. It features realistic soft-body damage physics, banger racing, demolition derbies, and a wide roster of vehicles — from stock cars to lawnmowers — in chaotic multiplayer races."
+  release_date: 2018-06-14
+  genre: Racing
+  developer: Bugbear Entertainment
+  publisher: THQ Nordic
+  player_count: 1-24
