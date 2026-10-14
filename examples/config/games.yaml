@@ -159,6 +159,19 @@ games:
   developer: Torn Banner Studios
   publisher: Torn Banner Studios
   player_count: 1-32
+- name: Chivalry 2
+  type: game
+  installer_type: exe_setup
+  base_path: Installers/Chivalry 2/game
+  install_exe: Chivalry 2.exe
+  parameters: '/SILENT /SUPPRESSMSGBOXES /NORESTART /DIR="{target_dir}" /PLAYERNAME="{player}"'
+  prerequisites: []
+  description: "Chivalry 2 is a multiplayer first-person medieval melee game developed by Torn Banner Studios and published by Tripwire Interactive. Players fight in large-scale sword-and-shield battles with up to 64 players, featuring a directional combat system, siege weapons, and objective-based game modes."
+  release_date: 2021-06-08
+  genre: Action, First-person melee
+  developer: Torn Banner Studios
+  publisher: Tripwire Interactive
+  player_count: 1-64
 - name: Counter Strike 2
   type: game
   installer_type: exe_setup
