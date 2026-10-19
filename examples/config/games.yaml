@@ -25,6 +25,19 @@ games:
   developer: Forgotten Empires
   publisher: Xbox Game Studios
   player_count: 1-8
+- name: Age of Empires IV
+  type: game
+  installer_type: exe_setup
+  base_path: Installers/Age of Empires IV/game
+  install_exe: Age of Empires IV.exe
+  parameters: '/SILENT /SUPPRESSMSGBOXES /NORESTART /DIR="{target_dir}" /PLAYERNAME="{player}"'
+  prerequisites: []
+  description: "Age of Empires IV is a real-time strategy game developed by Relic Entertainment and published by Xbox Game Studios. It features historical campaigns, enhanced graphics, and improved gameplay mechanics, allowing players to build and manage their civilizations, gather resources, and engage in battles against other players or AI opponents."
+  release_date: 2021-10-28
+  genre: Real-time strategy
+  developer: Relic Entertainment
+  publisher: Xbox Game Studios
+  player_count: 1-8  
 - name: Battlefield 1942
   type: game
   installer_type: msi
